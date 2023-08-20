@@ -1,13 +1,21 @@
 
 import './App.css';
-
+import { useState } from 'react';
 function App() {
+  const [age,setAge]= useState(0);
   const students=[
     { Name : "Vitthal",Age : 25,IsSamePerson:true},
     { Name : "Shubham",Age : 26,IsSamePerson:true},
     { Name : "Akshay",Age : 28,IsSamePerson: true },
 
   ]
+
+  function ClickFunc()
+  {
+
+    setAge(age+1);
+  }
+
   return (
    
     <div className="App">
@@ -19,6 +27,8 @@ function App() {
        
       })
       }
+      <p>{age}</p>
+      <button onClick={ ClickFunc }>Click</button>
     </div>
   );
 }

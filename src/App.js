@@ -32,8 +32,8 @@ function App() {
        
       })
       }
-      <p>{age}</p>
-      <p>{Name}</p>
+      <p>Age : {age}</p>
+      <p>Name : {Name}</p>
       <button onClick={ ClickFunc }>Click</button>
       <button onClick={ ChangeName }>Get Name</button>
     </div>

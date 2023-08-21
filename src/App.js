@@ -3,6 +3,7 @@ import './App.css';
 import { useState } from 'react';
 function App() {
   const [age,setAge]= useState(0);
+  const [Name,setName]= useState("Name");
   const students=[
     { Name : "Vitthal",Age : 25,IsSamePerson:true},
     { Name : "Shubham",Age : 26,IsSamePerson:true},
@@ -12,8 +13,12 @@ function App() {
 
   function ClickFunc()
   {
-
     setAge(age+1);
+  }
+
+  function ChangeName()
+  {
+    setName('Vitthal');
   }
 
   return (
@@ -28,7 +33,9 @@ function App() {
       })
       }
       <p>{age}</p>
+      <p>{Name}</p>
       <button onClick={ ClickFunc }>Click</button>
+      <button onClick={ ChangeName }>Get Name</button>
     </div>
   );
 }

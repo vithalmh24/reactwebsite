@@ -44,7 +44,7 @@ function App() {
       }
       <p>User Age : {age}</p>
       <p>User Name : {Name}</p>
-      <p>Number : { number }</p>
+      <p> Number  Value : { number }</p>
       <button onClick={ ClickFunc }>Click</button>
       <button onClick={ ChangeName }>Get Name</button>
       <button onClick={ PlusTen }>+10</button>

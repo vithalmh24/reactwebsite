@@ -4,6 +4,7 @@ import { useState } from 'react';
 function App() {
   const [age,setAge]= useState(0);
   const [Name,setName]= useState("Name");
+  const [number,SetNumber]=useState(0);
   const students=[
     { Name : "Vitthal",Age : 25,IsSamePerson:true},
     { Name : "Shubham",Age : 26,IsSamePerson:true},
@@ -21,6 +22,15 @@ function App() {
     setName('Vitthal');
   }
 
+    function PlusTen()
+    {
+      SetNumber(number+10)
+    }
+    function MinusTen()
+    {
+      SetNumber(number-10)
+    }
+
   return (
    
     <div className="App">
@@ -34,8 +44,11 @@ function App() {
       }
       <p>User Age : {age}</p>
       <p>User Name : {Name}</p>
+      <p>Number : { number }</p>
       <button onClick={ ClickFunc }>Click</button>
       <button onClick={ ChangeName }>Get Name</button>
+      <button onClick={ PlusTen }>+10</button>
+      <button onClick={ MinusTen }>-10</button>
     </div>
   );
 }

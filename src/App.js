@@ -1,6 +1,7 @@
 
 import './App.css';
 import { useState } from 'react';
+import Home from './Home';
 function App() {
   const [age,setAge]= useState(0);
   const [Name,setName]= useState("Name");
@@ -34,6 +35,7 @@ function App() {
   return (
    
     <div className="App">
+      <Home/>
       {
       students.map((user,key)=>{
          if(user.IsSamePerson){

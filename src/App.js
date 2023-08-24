@@ -35,6 +35,7 @@ function App() {
   return (
    
     <div className="App">
+      <h4>Home Component</h4>
       <Home/>
       {
       students.map((user,key)=>{

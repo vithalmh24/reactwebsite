@@ -4,7 +4,7 @@ const Footer = () => {
 const CurrentYear=new Date().getFullYear();
 return (
     <footer>
-       <p> @copyright {CurrentYear}</p>
+       <p>- @copyright {CurrentYear}</p>
     </footer>
   )
 }

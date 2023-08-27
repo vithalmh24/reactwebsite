@@ -24,6 +24,15 @@ header{
 header h2{
   color: #fff;
 }
+footer{
+  position: absolute;
+  bottom: 0;
+    height: 2rem;
+}
+footer p{
+  color: grey;
+  text-align: center !important;
+}
 
 @keyframes App-logo-spin {
   from {

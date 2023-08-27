@@ -3,11 +3,13 @@ import './App.css';
 import { useState } from 'react';
 import Home from './Home';
 import Header from './Component/Header';
+import Footer from './Component/Footer';
 function App() {
   return (
    
     <div className="App">
         <Header/>
+        <Footer/>
     </div>
   );
 }

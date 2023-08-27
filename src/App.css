@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,19 +15,14 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header{
+  background-color: orange;
+  padding: 5px;
+  margin: 0;
+  
 }
-
-.App-link {
-  color: #61dafb;
+header h2{
+  color: #fff;
 }
 
 @keyframes App-logo-spin {

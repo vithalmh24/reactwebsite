@@ -2,56 +2,12 @@
 import './App.css';
 import { useState } from 'react';
 import Home from './Home';
+import Header from './Component/Header';
 function App() {
-  const [age,setAge]= useState(0);
-  const [Name,setName]= useState("Name");
-  const [number,SetNumber]=useState(0);
-  const students=[
-    { Name : "Vitthal",Age : 25,IsSamePerson:true},
-    { Name : "Shubham",Age : 26,IsSamePerson:true},
-    { Name : "Akshay",Age : 28,IsSamePerson: true },
-
-  ]
-
-  function ClickFunc()
-  {
-    setAge(age+1);
-  }
-
-  function ChangeName()
-  {
-    setName('Vitthal');
-  }
-
-    function PlusTen()
-    {
-      SetNumber(number+10)
-    }
-    function MinusTen()
-    {
-      SetNumber(number-10)
-    }
-
   return (
    
     <div className="App">
-      <h4>Home Component</h4>
-      <Home/>
-      {
-      students.map((user,key)=>{
-         if(user.IsSamePerson){
-          return <MyComponent Name={user.Name} Age={user.Age}  />;
-        }
-       
-      })
-      }
-      <p>User Age : {age}</p>
-      <p>User Name : {Name}</p>
-      <p>  Value : { number }</p>
-      <button onClick={ ClickFunc }>Click</button>
-      <button onClick={ ChangeName }>Get Name</button>
-      <button onClick={ PlusTen }>+10</button>
-      <button onClick={ MinusTen }>-10</button>
+        <Header/>
     </div>
   );
 }
